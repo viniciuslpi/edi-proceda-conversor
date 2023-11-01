@@ -292,3 +292,5 @@ EdiProceda\Conemb Object
 ## Próximos passos:
 
 O próximo passo será inserir o registro **D C C – DADOS COMPLEMENTARES DO CONHECIMENTO EMBARCADO** no layout CONEMB.
+
+![image](https://github.com/viniciuslpi/edi-proceda-conversor/assets/56268138/686ad9c6-b482-4e9e-9868-a80f2abf9e88)
