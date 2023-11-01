@@ -1,0 +1,23 @@
+{
+    "name": "hfoletto/edi-proceda",
+    "description": "Ferramenta para interpretar estruturas de dados EDI no padrão PROCEDA",
+    "type": "library",
+    "keywords": ["EDI", "PROCEDA", "OCOREN"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Henrique Foletto",
+            "homepage": "https://github.com/hfoletto",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "slim/slim": "*",
+        "slim/psr7": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "EdiProceda\\": "src/"
+        }
+    }
+}
