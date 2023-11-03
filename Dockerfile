@@ -1,5 +1,17 @@
-FROM php:7.2-cli
-WORKDIR /home/vini-devapi/projects/conemb/edi-proceda
-COPY . /home/vini-devapi/projects/conemb/edi-proceda/src/Conemb.php
-EXPOSE 80
-CMD ["php", "Conemb.php" ]
+FROM php:8.0-cli
+
+WORKDIR /edi
+
+RUN apt-get update && apt-get install -y git
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+COPY composer.json composer.lock ./
+
+RUN composer install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["php", "-S", "0.0.0.0:3000", "-t", "/edi/public"]
